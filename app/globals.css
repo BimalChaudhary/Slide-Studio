@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.input {
+  @apply w-full rounded-lg border border-slate-600 bg-slate-800 px-3 py-2 text-sm text-slate-100 outline-none focus:border-indigo-400;
+}
+.btn {
+  @apply inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-medium transition disabled:cursor-not-allowed disabled:opacity-40;
+}
+.btn-primary {
+  @apply bg-indigo-500 text-white hover:bg-indigo-400;
+}
+.btn-ghost {
+  @apply bg-slate-700 text-slate-100 hover:bg-slate-600;
+}
